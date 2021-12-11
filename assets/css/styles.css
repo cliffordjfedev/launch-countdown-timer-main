@@ -39,10 +39,11 @@ h1 {
   margin-right: 1.7rem;
 }
 .timer-container .timer-bg {
+  width: 160px;
   background-color: #343650;
   border-radius: 7px;
   color: #fb6087;
-  padding: 0.9rem 1.5rem;
+  padding: 0.9rem 1rem;
   box-shadow: 0 0.7rem 0rem #191a24 !important;
   margin-bottom: 1.5rem;
 }
