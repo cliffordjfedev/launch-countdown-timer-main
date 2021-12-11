@@ -9,6 +9,8 @@ body {
   background-color: #1e1f29;
   background-image: linear-gradient(to bottom, #1e1f29, #21212e, #252232, #2a2336, #2f2439);
   height: 100vh;
+  min-width: 18.75rem;
+  max-width: 117.5rem;
 }
 
 section {
@@ -39,7 +41,6 @@ h1 {
   margin-right: 1.7rem;
 }
 .timer-container .timer-bg {
-  width: 160px;
   background-color: #343650;
   border-radius: 7px;
   color: #fb6087;
@@ -67,8 +68,52 @@ footer {
   margin-right: 2rem;
 }
 
-.social-network a svg path:hover {
+.social-network a:hover svg path {
   fill: #fb6087 !important;
+}
+
+@media screen and (max-width: 767px) {
+  .timer-container p {
+    font-size: 0.5625rem;
+    letter-spacing: 6px;
+  }
+  .timer-container .space {
+    margin-right: 1.3rem;
+  }
+  .timer-container .timer-bg {
+    padding: 0.9rem 0.6rem;
+  }
+  .timer-container .timer-bg h5 {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .timer-container p {
+    font-size: 0.5rem;
+    letter-spacing: 4px;
+  }
+  .timer-container .timer-bg {
+    padding: 1.1rem 0.6rem;
+  }
+  .timer-container .timer-bg h5 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 1.2rem;
+    letter-spacing: 6px;
+  }
+
+  .timer-container .space {
+    margin-right: 0.8rem;
+  }
+  .timer-container p {
+    font-size: 0.375rem;
+  }
+  .timer-container .timer-bg h5 {
+    font-size: 1.2rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
